@@ -1,25 +1,12 @@
 <script>
     let isOpen = false;
-    /**
-     * @type {HTMLAnchorElement}
-     */
-    let modalUsedTechnology;
-
     function toggleModal() {
         isOpen = !isOpen;
-        if (isOpen) {
-            modalUsedTechnology.style.width = "800px";
-            modalUsedTechnology.style.height = "400px";
-            modalUsedTechnology.style.position = 'absolute';
-        }
     }
 </script>
 
-<a
-    href = "usedTechnology"
-    data-sveltekit-noscroll
+<button
     on:click = { toggleModal }
-    bind:this={ modalUsedTechnology }
     class:expanded = { isOpen }
 >
     <div>
@@ -30,10 +17,10 @@
             quas ex.
         </p>
     </div>
-</a>
+</button>
 
 <style>
-    a {
+    button {
         max-width: 100%;
         width: 600px;
         background-color: var(--color-primary);
@@ -47,10 +34,9 @@
 
     /* isOpen -> True */
     .expanded {
+        position: absolute;
         width: 800px;
         height: 400px;
-        transition: max-width 0.5s ease;
-        position: absolute;
     }
 
 </style>
