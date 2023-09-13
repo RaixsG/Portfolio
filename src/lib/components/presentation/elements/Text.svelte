@@ -9,6 +9,9 @@
 </div>
 
 <style>
+    div {
+        padding: 50px 0 50px 0;
+    }
     span {
         font-size: 1.5rem;
         font-weight: bold;
@@ -16,7 +19,7 @@
     }
 
     p {
-        max-width: 100%;
-        width: 75ch;
+        max-width: 75ch;
+        width: 100%;
     }
 </style>

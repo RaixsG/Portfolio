@@ -14,8 +14,7 @@
     article {
         max-width: 100%;
         width: 1200px;
-        margin: auto;
-        margin-top: 25px;
+        margin: 25px auto 25px auto;
 
         display: grid;
         justify-content: center;

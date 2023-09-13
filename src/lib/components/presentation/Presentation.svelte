@@ -1,35 +1,29 @@
 <script>
-    import { Text, Photo } from './elements'
-    let isOpen = false;
-    function toggleModal() {
-        isOpen = !isOpen;
-    }
+    import { Text, Photo } from "./elements";
 </script>
 
-<button
-    on:click = { toggleModal }
-    class:expanded = { isOpen }
->
+<section>
     <Text />
     <Photo />
-</button>
+</section>
 
 <style>
-    button {
-        max-width: 100%;
-        width: 600px;
+    section {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        column-gap: 20px;
+
         background-color: var(--color-primary);
-        padding: 5px;
+
+        max-width: 900px;
+        width: 100%;
+        height: 400px;
+        padding: 0 0 0 5px;
+        position: relative;
+        
         border-radius: 20px;
-        border: 2px solid transparent;
+        /* border: 2px solid transparent; */
         box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
-        cursor: pointer;
         transition: width 0.5s ease, height 0.5s ease;
-    }
-    /* isOpen -> True */
-    .expanded {
-    position: absolute;
-    width: 800px;
-    height: 400px;
     }
 </style>
