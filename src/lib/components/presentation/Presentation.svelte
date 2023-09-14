@@ -1,8 +1,11 @@
 <script>
     import { Text, Photo } from "./elements";
+
+
+    export let clase = "presentation";
 </script>
 
-<section>
+<section class={ clase }>
     <Text />
     <Photo />
 </section>

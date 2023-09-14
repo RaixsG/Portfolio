@@ -14,11 +14,19 @@
     article {
         max-width: 100%;
         width: 1200px;
-        margin: 25px auto 25px auto;
 
         display: grid;
         justify-content: center;
-        grid-template-columns: 1fr auto minmax(20px, auto);
+        grid-template-columns: repeat(4, 1fr);
         column-gap: 20px;
     }
+
+    .presentation {
+        grid-column: 1 / 3;
+    }
+
+    .usedTechnology {
+        grid-column: 3 / 5;
+    }
+
 </style>
