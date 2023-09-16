@@ -1,14 +1,13 @@
-
 <section>
     <span class="html"
         ><svg
             xmlns="http://www.w3.org/2000/svg"
             class="icon icon-tabler icon-tabler-brand-html5"
-            width="44"
-            height="44"
+            width="55"
+            height="55"
             viewBox="0 0 24 24"
             stroke-width="1.5"
-            stroke="#2c3e50"
+            stroke="#222"
             fill="none"
             stroke-linecap="round"
             stroke-linejoin="round"
@@ -22,11 +21,11 @@
         ><svg
             xmlns="http://www.w3.org/2000/svg"
             class="icon icon-tabler icon-tabler-brand-css3"
-            width="44"
-            height="44"
+            width="55"
+            height="55"
             viewBox="0 0 24 24"
             stroke-width="1.5"
-            stroke="#2c3e50"
+            stroke="#222"
             fill="none"
             stroke-linecap="round"
             stroke-linejoin="round"
@@ -40,11 +39,11 @@
         <svg
             xmlns="http://www.w3.org/2000/svg"
             class="icon icon-tabler icon-tabler-brand-javascript"
-            width="44"
-            height="44"
+            width="55"
+            height="55"
             viewBox="0 0 24 24"
             stroke-width="1.5"
-            stroke="#2c3e50"
+            stroke="#222"
             fill="none"
             stroke-linecap="round"
             stroke-linejoin="round"
@@ -61,11 +60,11 @@
         ><svg
             xmlns="http://www.w3.org/2000/svg"
             class="icon icon-tabler icon-tabler-brand-svelte"
-            width="44"
-            height="44"
+            width="55"
+            height="55"
             viewBox="0 0 24 24"
             stroke-width="1.5"
-            stroke="#2c3e50"
+            stroke="#222"
             fill="none"
             stroke-linecap="round"
             stroke-linejoin="round"
@@ -83,11 +82,11 @@
         ><svg
             xmlns="http://www.w3.org/2000/svg"
             class="icon icon-tabler icon-tabler-brand-mysql"
-            width="44"
-            height="44"
+            width="55"
+            height="55"
             viewBox="0 0 24 24"
             stroke-width="1.5"
-            stroke="#2c3e50"
+            stroke="#222"
             fill="none"
             stroke-linecap="round"
             stroke-linejoin="round"
@@ -103,16 +102,19 @@
 
 <style>
     section {
-        width: 200px;
-        height: 200px;
-        background-color: var(--color-primary);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-area: usedTechnology;
+
+        width: 100%;
+        height: 100%;
         padding: 5px;
+
+        background-color: var(--color-primary);
+
         border-radius: 20px;
         box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
         transition: width 0.5s ease, height 0.5s ease;
-
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
     }
 
     span {

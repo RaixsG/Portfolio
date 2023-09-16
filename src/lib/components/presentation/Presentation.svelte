@@ -1,11 +1,8 @@
 <script>
     import { Text, Photo } from "./elements";
-
-
-    export let clase = "presentation";
 </script>
 
-<section class={ clase }>
+<section>
     <Text />
     <Photo />
 </section>
@@ -14,15 +11,17 @@
     section {
         display: grid;
         grid-template-columns: 3fr 1fr;
+        grid-column: var(--grid-column);
         column-gap: 20px;
-
-        background-color: var(--color-primary);
 
         max-width: 900px;
         width: 100%;
         height: 400px;
         padding: 0 0 0 5px;
+        overflow: hidden; /*Usar cuando se hace mas pequeño*/
         position: relative;
+        
+        background-color: var(--color-primary);
         
         border-radius: 20px;
         /* border: 2px solid transparent; */
