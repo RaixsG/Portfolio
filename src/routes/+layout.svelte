@@ -18,6 +18,7 @@
 
 <style>
     article {
+        position: relative;
         max-width: 100%;
         width: 1200px;
         margin: 0 auto;
@@ -31,6 +32,7 @@
 
     .div_container-used-perfil {
         grid-column: 4 / 5;
+        position: relative;
 
         height: 400px;
         display: grid;

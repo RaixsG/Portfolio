@@ -3,8 +3,8 @@
         ><svg
             xmlns="http://www.w3.org/2000/svg"
             class="icon icon-tabler icon-tabler-brand-html5"
-            width="55"
-            height="55"
+            width="75"
+            height="75"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="#222"
@@ -21,8 +21,8 @@
         ><svg
             xmlns="http://www.w3.org/2000/svg"
             class="icon icon-tabler icon-tabler-brand-css3"
-            width="55"
-            height="55"
+            width="75"
+            height="75"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="#222"
@@ -39,8 +39,8 @@
         <svg
             xmlns="http://www.w3.org/2000/svg"
             class="icon icon-tabler icon-tabler-brand-javascript"
-            width="55"
-            height="55"
+            width="75"
+            height="75"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="#222"
@@ -60,8 +60,8 @@
         ><svg
             xmlns="http://www.w3.org/2000/svg"
             class="icon icon-tabler icon-tabler-brand-svelte"
-            width="55"
-            height="55"
+            width="75"
+            height="75"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="#222"
@@ -82,8 +82,8 @@
         ><svg
             xmlns="http://www.w3.org/2000/svg"
             class="icon icon-tabler icon-tabler-brand-mysql"
-            width="55"
-            height="55"
+            width="75"
+            height="75"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="#222"
@@ -102,8 +102,13 @@
 
 <style>
     section {
+        position: absolute;
+        top: 0;
+        right: 0;
+
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-columns: repeat(2, 1fr); */
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
         grid-area: usedTechnology;
 
         width: 100%;
@@ -114,17 +119,27 @@
 
         border-radius: 20px;
         box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
-        transition: width 0.5s ease, height 0.5s ease;
+        transition: width 0.5s ease-in, height 0.5s ease 0.5s;
+        overflow: hidden;
+    }
+
+    section:hover {
+        width: 150%;
+        height: 150%;
+        /* grid-template-columns: repeat(3, 1fr); */
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        overflow: hidden;
     }
 
     span {
-        max-width: 100%;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: all 0.5s ease;
     }
 
-    .html {
+    /* .html {
         grid-column: 1 / 2;
     }
 
@@ -141,6 +156,6 @@
     }
 
     .mysql {
-        grid-column: 1 / 3;
-    }
+        grid-column: 6;
+    } */
 </style>
