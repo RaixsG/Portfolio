@@ -1,7 +1,7 @@
 <div>
     <span>🫡<strong>&lt;H</strong>ola, soy <strong>Jhardell</strong> Linares<strong>/&gt;</strong></span>
     <p>
-        <strong class="strong-p">Aprender </strong>cosas nuevas y experimentar con nuevas tecnologías es muy interesante de desarrollar. El <strong class="strong-p">Desarrollo Web Frontend/Backend</strong> me ayuda a mantener el interés, ya que me permite conocer y tener nuevas experiencias y conocimientos.
+        <strong class="strong-p">Aprender y experimentar </strong>con nuevas tecnologías es fascinante. El <strong class="strong-p">Desarrollo Web Frontend/Backend</strong> me permite mantener el interés, ya que me brinda la oportunidad de adquirir conocimientos y experiencias en constante evolución.
     </p>
 </div>
 
