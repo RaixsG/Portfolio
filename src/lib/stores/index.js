@@ -1,0 +1,1 @@
+export { backgroundOpacity } from './BackgroundOpacity';
