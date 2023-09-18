@@ -1,10 +1,7 @@
 <div>
     <span>🫡<strong>&lt;H</strong>ola, soy <strong>Jhardell</strong> Linares<strong>/&gt;</strong></span>
     <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea dolorem
-        obcaecati cupiditate voluptates neque necessitatibus, saepe a,
-        explicabo, sapiente dolores blanditiis quasi aliquam facilis.
-        Repudiandae voluptatibus doloremque aliquid nihil reprehenderit!
+        El <strong class="strong-p"> aprender </strong>cosas nuevas y experimentar con nuevas tecnologías es super interesante de desarrollarlo, y para mantener ese interes, el <strong class="strong-p">Desarrollo Web Frontend/Backend</strong>  me ayudan a mantener las ganas de conocer y tener nuevas experiencias y conocimientos.
     </p>
 </div>
 
@@ -15,7 +12,6 @@
         justify-content: center;
         align-items: center;
         padding: 50px 25px 50px 25px;
-        
     }
 
     strong  {
@@ -36,4 +32,12 @@
         max-width: 75ch;
         width: 100%;
     }
+
+    .strong-p {
+        color: var(--background-color);
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1rem;
+    }
+
 </style>

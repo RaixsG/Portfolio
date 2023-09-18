@@ -1,5 +1,5 @@
 <section>
-    <span class="html"
+    <span
         ><svg
             xmlns="http://www.w3.org/2000/svg"
             class="icon icon-tabler icon-tabler-brand-html5"
@@ -17,7 +17,7 @@
             <path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
         </svg>
     </span>
-    <span class="css"
+    <span
         ><svg
             xmlns="http://www.w3.org/2000/svg"
             class="icon icon-tabler icon-tabler-brand-css3"
@@ -35,7 +35,7 @@
             <path d="M8.5 8h7l-4.5 4h4l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
         </svg>
     </span>
-    <span class="js">
+    <span>
         <svg
             xmlns="http://www.w3.org/2000/svg"
             class="icon icon-tabler icon-tabler-brand-javascript"
@@ -56,7 +56,7 @@
             />
         </svg>
     </span>
-    <span class="svelte"
+    <span
         ><svg
             xmlns="http://www.w3.org/2000/svg"
             class="icon icon-tabler icon-tabler-brand-svelte"
@@ -78,7 +78,7 @@
             />
         </svg>
     </span>
-    <span class="mysql"
+    <span
         ><svg
             xmlns="http://www.w3.org/2000/svg"
             class="icon icon-tabler icon-tabler-brand-mysql"
@@ -107,7 +107,6 @@
         right: 0;
 
         display: grid;
-        /* grid-template-columns: repeat(2, 1fr); */
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
         grid-area: usedTechnology;
 
@@ -119,14 +118,12 @@
 
         border-radius: 20px;
         box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
-        transition: width 0.5s ease-in, height 0.5s ease 0.5s;
+        transition: width 0.5s ease-in-out;
         overflow: hidden;
     }
 
     section:hover {
         width: 150%;
-        height: 150%;
-        /* grid-template-columns: repeat(3, 1fr); */
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
         overflow: hidden;
     }
@@ -138,24 +135,4 @@
         align-items: center;
         transition: all 0.5s ease;
     }
-
-    /* .html {
-        grid-column: 1 / 2;
-    }
-
-    .css {
-        grid-column: 2 / 3;
-    }
-
-    .js {
-        grid-column: 1 / 2;
-    }
-
-    .svelte {
-        grid-column: 2 / 3;
-    }
-
-    .mysql {
-        grid-column: 6;
-    } */
 </style>

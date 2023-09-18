@@ -9,7 +9,7 @@
 <article>
     <Presentation --grid-column="1 / 4" />
     <div class="div_container-used-perfil">
-        <UsedTechnology --grid-column="1 / 3"/>
+        <UsedTechnology />
         <Github />
         <Linkedin />
     </div>
