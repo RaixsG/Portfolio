@@ -1,6 +1,13 @@
-<a
-    href="https://www.linkedin.com/in/alessyo-jhardell-linares-vargas-3a8461264/"
->
+<script>
+    const openNewTab = () => {
+        window.open(
+            "https://www.linkedin.com/in/alessyo-jhardell-linares-vargas-3a8461264/",
+            "_blank"
+        );
+    };
+</script>
+
+<button on:click={openNewTab}>
     <div>
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -43,10 +50,11 @@
             <path d="M16 16v-3a2 2 0 0 0 -4 0" />
         </svg>
     </div>
-</a>
+</button>
 
 <style>
-    a {
+    button {
+        z-index: 1;
         display: grid;
         grid-area: linkedin;
 
@@ -62,7 +70,7 @@
         transition: width 0.5s ease, height 0.5s ease;
     }
 
-    a:hover {
+    button:hover {
         filter: saturate(1.5);
     }
 
