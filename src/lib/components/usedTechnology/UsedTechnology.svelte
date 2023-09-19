@@ -54,7 +54,7 @@
 
         border-radius: 20px;
         box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
-        transition: width 0.5s ease-in-out, height 0.5s ease-in-out 0.5s;
+        transition: width 0.5s ease-in-out, height 0.5s ease-in-out 0.05s;
         overflow: hidden;
     }
 
