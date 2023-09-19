@@ -54,7 +54,6 @@
 
 <style>
     button {
-        z-index: 1;
         display: grid;
         grid-area: linkedin;
 
