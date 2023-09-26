@@ -59,6 +59,8 @@
         border-radius: 20px;
         box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
         transition: width 0.5s ease, height 0.5s ease;
+
+        place-content: center;
     }
 
     button:hover {
@@ -73,7 +75,7 @@
 
     .icon-tabler-external-link {
         position: absolute;
-        top: 10px;
+        top: -15px;
         right: -45px;
         fill: transparent;
     }
