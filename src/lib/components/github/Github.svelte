@@ -1,4 +1,9 @@
-<a href="https://github.com/RaixsG">
+<script>
+    const openNewTab = () => {
+        window.open("https://github.com/RaixsG", "_blank")}
+</script>
+
+<button on:click={ openNewTab }>
     <div>
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -37,10 +42,10 @@
             />
         </svg>
     </div>
-</a>
+</button>
 
 <style>
-    a {
+    button {
         display: grid;
         grid-area: github;
 
@@ -56,7 +61,7 @@
         transition: width 0.5s ease, height 0.5s ease;
     }
 
-    a:hover {
+    button:hover {
         filter: saturate(1.5);
     }
 
